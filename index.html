@@ -1,0 +1,159 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buzón CUC Escucha</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Buzón CUC Escucha</h1>
+            <p>Tu opinión ayuda a mejorar nuestra Universidad</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="intro">
+            <h2>Queremos escucharte</h2>
+
+            <p>
+                Este espacio está creado para que los estudiantes puedan
+                compartir ideas y sugerencias que contribuyan a mejorar
+                su experiencia dentro de la institución.
+            </p>
+
+            <div class="topics">
+                <span>Bienestar</span>
+                <span>Servicios</span>
+                <span>Clases</span>
+                <span>Inclusión</span>
+                <span>Espacios</span>
+                <span>Procesos académicos</span>
+            </div>
+        </section>
+
+
+        <section class="form-section">
+
+            <h2>Registra tu sugerencia</h2>
+
+            <form id="suggestionForm">
+
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Escribe tu nombre"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Correo institucional</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="ejemplo@cuc.edu.co"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="category">Categoría</label>
+
+                    <select id="category" name="category" required>
+                        <option value="">Selecciona una categoría</option>
+                        <option value="bienestar">Bienestar</option>
+                        <option value="servicios">Servicios</option>
+                        <option value="clases">Clases</option>
+                        <option value="inclusion">Inclusión</option>
+                        <option value="espacios">Espacios</option>
+                        <option value="procesos">Procesos académicos</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="semester">Semestre</label>
+
+                    <select id="semester" name="semester" required>
+                        <option value="">Selecciona tu semestre</option>
+                        <option value="1">1.º semestre</option>
+                        <option value="2">2.º semestre</option>
+                        <option value="3">3.º semestre</option>
+                        <option value="4">4.º semestre</option>
+                        <option value="5">5.º semestre</option>
+                        <option value="6">6.º semestre</option>
+                        <option value="7">7.º semestre</option>
+                        <option value="8">8.º semestre</option>
+                        <option value="9">9.º semestre</option>
+                        <option value="10">10.º semestre</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="suggestion">Tu sugerencia</label>
+
+                    <textarea
+                        id="suggestion"
+                        name="suggestion"
+                        rows="6"
+                        placeholder="Escribe aquí tu idea o sugerencia..."
+                        required
+                    ></textarea>
+                </div>
+
+
+                <div class="form-group checkbox">
+                    <input
+                        type="checkbox"
+                        id="anonymous"
+                        name="anonymous"
+                    >
+
+                    <label for="anonymous">
+                        Deseo realizar esta sugerencia de forma anónima
+                    </label>
+                </div>
+
+
+                <button type="submit">
+                    Enviar sugerencia
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                Buzón CUC Escucha · Universidad de la Costa
+            </p>
+
+            <p>
+                Tu voz puede generar cambios.
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
+```

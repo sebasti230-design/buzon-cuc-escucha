@@ -1,0 +1,207 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* CONTENEDOR */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.header {
+    background-color: #003b73;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+
+/* INTRODUCCIÓN */
+
+.intro {
+    background-color: white;
+    margin-top: 35px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.intro h2 {
+    color: #003b73;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    margin-bottom: 25px;
+}
+
+
+/* CATEGORÍAS */
+
+.topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.topics span {
+    background-color: #e7f0fa;
+    color: #003b73;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* FORMULARIO */
+
+.form-section {
+    background-color: white;
+    margin: 35px 0;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-section h2 {
+    color: #003b73;
+    margin-bottom: 25px;
+}
+
+
+/* CAMPOS */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #003b73;
+    box-shadow: 0 0 0 2px rgba(0, 59, 115, 0.1);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* CHECKBOX */
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox input {
+    width: auto;
+}
+
+
+/* BOTÓN */
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #003b73;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056a6;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #003b73;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.footer p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .intro,
+    .form-section {
+        padding: 25px;
+    }
+
+    .topics {
+        flex-direction: column;
+    }
+
+    .topics span {
+        text-align: center;
+    }
+}
